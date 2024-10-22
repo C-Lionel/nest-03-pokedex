@@ -4,6 +4,7 @@ import { PokeResponse } from './interfaces/poke-response.interface';
 
 
 @Injectable()
+
 export class SeedService {
 
   private readonly axios: AxiosInstance = axios;
