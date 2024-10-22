@@ -16,17 +16,6 @@ export class PokemonService {
 
   async create(createPokemonDto: CreatePokemonDto) {
 
-    // ESTO ES LO MISMO
-
-    // const {name, no} = createPokemonDto;
-
-    // return {
-    //   name, 
-    //   no
-    // }
-
-    // QUE ESTO 
-
     createPokemonDto.name = createPokemonDto.name.toLocaleLowerCase();
 
     try {
