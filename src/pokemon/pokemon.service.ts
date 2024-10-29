@@ -28,7 +28,6 @@ export class PokemonService {
         this.handleExeptions(error); 
     }
     
-
   }
 
   findAll( PaginationDto: PaginationDto ) {
@@ -71,8 +70,6 @@ export class PokemonService {
   }
 
   async update( term: string, updatePokemonDto: UpdatePokemonDto ) {
-
-    
 
     const pokemon = await this.findOne( term );
 
